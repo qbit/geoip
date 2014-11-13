@@ -1,0 +1,22 @@
+{
+  "name": "geo.qbit.io",
+  "version": "1.0.0",
+  "description": "geoip service @ geo.qbit.io",
+  "main": "geo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qbit/geo.qbit.io.git"
+  },
+  "author": "Aaron Bieber <deftly@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/qbit/geo.qbit.io/issues"
+  },
+  "homepage": "https://github.com/qbit/geo.qbit.io",
+  "dependencies": {
+    "geoip": "^0.5.5"
+  }
+}
