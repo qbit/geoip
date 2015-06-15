@@ -1,7 +1,7 @@
 var http = require('http'),
 geo = require('geoip'),
 City = geo.City,
-city = new City("/var/db/GeoIP/GeoIP.dat"),
+city = new City("/var/db/GeoLiteCity.dat"),
 server = http.createServer(function(req, res) {
     var from = req.connection.remoteAddress || req.headers['x-forwarded-for'] || 'unknown';
     if (from === '127.0.0.1') {
