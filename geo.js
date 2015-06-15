@@ -16,7 +16,11 @@ server = http.createServer(function(req, res) {
 	if (req.url.match('json')) {
 	    res.end(JSON.stringify(data));
 	} else {
-	    res.end(data.latitude + ", " + data.longitude);
+	    if (req.url.match('redshift')) {
+	        res.end(data.latitude +":"+data.longitude);
+            } else {
+	        res.end(data.latitude + ", " + data.longitude);
+            }
 	}
     });
 }).listen(3099);
