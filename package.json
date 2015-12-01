@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/qbit/geo.qbit.io",
   "dependencies": {
-    "geoip": "^0.5.5"
+    "geoip": "git+https://github.com/qbit/GeoIP-1.git"
   }
 }
