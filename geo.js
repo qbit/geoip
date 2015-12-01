@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var http = require('http'),
 geo = require('geoip'),
 City = geo.City,
