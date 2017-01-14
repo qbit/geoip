@@ -16,6 +16,11 @@ server = http.createServer(function(req, res) {
 	    res.end(from);
 	    return;
 	}
+        if (!data) {
+            console.log("no data for %s", from);
+	    res.end(from);
+	    return;
+        }
 	if (req.url.match('json')) {
 	    res.end(JSON.stringify(data));
 	} else {
